@@ -8,42 +8,56 @@
 //   padding: 0.2em 0;
 // }
 
-// body {
-//   background: #fafafa;
-//   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//   color: #333;
-// }
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Nunito', sans-serif;
+
+body {
+  background: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+
+  // reset
+  margin: 0;
+}
+
+.ContainerBackground {
+  background: url("../images/background-style.png") no-repeat 0 0;
+  width: 100%;
+  height: 1341px;
+  padding: 74px 0 0;
+  display: block;
+}
 
 .Container {
   max-width: 1170px;
-  // padding: 0 20px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .Header {
-  margin: 74px auto 0;
+  // margin: 74px auto 0;
+  display: flex;
 }
 
-.Button {
-  height: 55px;
-  background-color: #ff8c6f;
-  border-radius: 10px;
-  // top: 74px;
-  max-width: 149px;
-  height: 55px;
+.Nav {
+  margin: 0 0 0 auto;
 }
 
-// .hero-unit {
-//   margin: 50px auto 0 auto;
-//   width: 300px;
-//   font-size: 18px;
-//   font-weight: 200;
-//   line-height: 30px;
-//   background-color: #eee;
-//   border-radius: 6px;
-//   padding: 60px;
-//   h1 {
-//     font-size: 60px;
-//     line-height: 1;
-//     letter-spacing: -1px;
-//   }
-// }
+.NavLink {
+  color: #fff;
+  line-height: 36px;
+  font-size: 20px;
+  text-decoration: none;
+
+  // font-family: FontAwesome5FreeSolid;
+  // font-size: 16px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@import "./components/Button";
+@import "./Headline";
