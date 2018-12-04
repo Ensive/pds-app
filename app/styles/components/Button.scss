@@ -1,23 +1,23 @@
 .Button {
   // display: inline-block;
-  display: block;
+  // line-height: 30px;
   background-color: #ff8c6f;
   border-radius: 10px;
   border: 0;
   color: #fefeff;
   cursor: pointer;
+  display: block;
   font-size: 18px;
   font-weight: 500;
   height: 55px;
-  // line-height: 30px;
   line-height: 55px;
   max-width: 149px;
+  overflow: hidden;
   position: relative;
   text-align: center;
   text-decoration: none;
   width: 100%;
   z-index: 0;
-  overflow: hidden;
 
   &:active {
     transform: translateY(1px);

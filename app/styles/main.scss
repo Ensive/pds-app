@@ -29,6 +29,10 @@ body {
   box-sizing: border-box;
 }
 
+// base
+@import '../fonts/fontello';
+@import '../fonts/animation';
+
 // layout
 @import './Container';
 @import './Header';
@@ -44,3 +48,9 @@ body {
 @import './blocks/Services';
 @import './blocks/About';
 @import './blocks/CompanyInfo';
+@import './blocks/Purpose';
+
+// TODO: rework font-size a line-height occurences
+// TODO: rework title occurences
+// TODO: rework subtitle occurences
+// TODO: rework text occurences

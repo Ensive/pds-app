@@ -1,13 +1,15 @@
 .CompanyInfo {
-  padding: 137px 0;
+  min-height: 627px;
+  padding: 137px 0 162px;
 }
 
 .CompanyInfo__numbers {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .CompanyInfo__years {
-  flex: 0;
+  flex: 0 0 auto;
 }
 
 .CompanyInfo__general {
@@ -41,11 +43,11 @@
   color: #fff;
   font-size: 118px;
   font-weight: 600;
+  height: 240px;
   line-height: 200px;
   margin: 25px 0 0 5px;
   text-align: center;
   text-transform: uppercase;
-  height: 240px;
   width: 240px;
   // line-height: 36px;
 }
@@ -59,13 +61,13 @@
 }
 
 .CompanyInfo__number {
-  display: block;
   color: #5b67f0;
+  display: block;
   font-size: 60px;
   font-weight: 600;
   line-height: 36px;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 
   > .CompanyInfo__symbol {
     font-weight: 500;
