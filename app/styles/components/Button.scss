@@ -1,4 +1,6 @@
 .Button {
+  // display: inline-block;
+  display: block;
   background-color: #ff8c6f;
   border-radius: 10px;
   border: 0;
@@ -7,42 +9,66 @@
   font-size: 18px;
   font-weight: 500;
   height: 55px;
-  line-height: 30px;
+  // line-height: 30px;
+  line-height: 55px;
   max-width: 149px;
   position: relative;
+  text-align: center;
+  text-decoration: none;
   width: 100%;
   z-index: 0;
   overflow: hidden;
 
   &:active {
     transform: translateY(1px);
-    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+    // box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
   }
 
   &::before {
-    content: "";
+    content: '';
     background-color: darken(#ff8c6f, 5%);
     border-radius: 10px;
     display: block;
     height: 100%;
-    // left: 110%;
     position: absolute;
     top: 0;
     transform: skew(30deg, 0) translateX(-110%);
     transition: transform 0.4s ease;
-    // transform: skew(30deg, 0) translateX(-15%);
     width: 125%;
     z-index: -1;
   }
 
-  &:hover::before {
-    // left: -20px;
+  &:hover::before,
+  &:focus::before {
     transform: skew(10deg, 0) translateX(-15%);
   }
 }
 
-.Button--headline {
-  // background-color: #ff846f;
-  height: 60px;
+// Button sizes
+.Button--big {
   max-width: 218px;
+  line-height: 60px;
+  height: 60px;
+}
+
+// Button colors
+.Button--violet {
+  background-color: #5b67f0;
+
+  &::before {
+    background-color: darken(#5b67f0, 5%);
+  }
+}
+
+// Button environment styles (situative)
+.Button--headline {
+  margin: 0 0 0 9px;
+}
+
+// effects
+.Button--shadowed {
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
 }

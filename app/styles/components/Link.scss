@@ -1,0 +1,26 @@
+.Link {
+  color: #fff;
+  line-height: 36px;
+  font-size: 20px;
+  text-decoration: none;
+
+  // font-family: FontAwesome5FreeSolid;
+  // font-size: 16px;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.Link--nav {
+  margin: 0 47px 0 0;
+}
+
+.Link--email {
+  flex: 0 1 auto;
+  color: #d7daff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 7px 0 0 0;
+}

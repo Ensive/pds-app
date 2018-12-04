@@ -1,0 +1,89 @@
+.CompanyInfo {
+  padding: 137px 0;
+}
+
+.CompanyInfo__numbers {
+  display: flex;
+}
+
+.CompanyInfo__years {
+  flex: 0;
+}
+
+.CompanyInfo__general {
+  display: flex;
+  flex: 1;
+  margin: 0 0 0 60px;
+  padding: 100px 0 15px;
+}
+
+.CompanyInfo__title {
+  color: #537097;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 36px;
+  text-indent: -140px;
+}
+
+// Shift + Command + L (select all occurences of selection)
+// Command + F2 (select all occurences of current word)
+// Shift + Command + Space (parameters hint)
+// Command + . (quick fix)
+// Shift + Command + \ (jump to matching bracket)
+// Alt + Command + { (fold)
+// Alt + Command + up (insert cursor)
+// Shift + Ctrl + Command + left/right
+
+.CompanyInfo__years-number {
+  background-color: #ff846e;
+  border-radius: 50%;
+  border: 25px solid rgba(#ffe9e5, 0.54);
+  color: #fff;
+  font-size: 118px;
+  font-weight: 600;
+  line-height: 200px;
+  margin: 25px 0 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 240px;
+  width: 240px;
+  // line-height: 36px;
+}
+
+.CompanyInfo__subtitle {
+  color: #242425;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 0 0 30px;
+}
+
+.CompanyInfo__number {
+  display: block;
+  color: #5b67f0;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+
+  > span {
+    font-weight: 500;
+    font-size: 30px;
+  }
+}
+
+.CompanyInfo__logos-wrapper {
+  background-color: red;
+  margin: 95px 0 0 auto;
+  max-width: 937px;
+}
+
+.CompanyInfo__logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.CompanyInfo__logo {
+  flex: 1;
+}

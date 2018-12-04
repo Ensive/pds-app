@@ -38,33 +38,158 @@
       </p>
     <![endif]-->
 
-    <div class="ContainerBackground">
-      <header class="Header Container">
-        <a href="#" class="LogoLink">
+    <div class="Container Container--Header">
+      <header class="Header">
+        <a href="#" class="Logo">
           <img src="./images/logo-at.png" alt="" class="Logo" />
         </a>
-        <span class="HeaderEmail">momohelp@mail.com</span>
-        <nav class="Nav">
-          <a class="NavLink" href="#">Agency</a>
-          <a class="NavLink" href="#">Services</a>
-          <a class="NavLink" href="#">Protfolio</a>
-          <a class="NavLink" href="#">Pricing</a>
-          <a class="NavLink" href="#">Page</a>
+        <span class="Link Link--email">momohelp@mail.com</span>
+        <nav class="Nav Nav--header">
+          <a class="Link Link--nav" href="#">Agency</a>
+          <a class="Link Link--nav" href="#">Services</a>
+          <a class="Link Link--nav" href="#">Protfolio</a>
+          <a class="Link Link--nav" href="#">Pricing</a>
+          <a class="Link Link--nav" href="#">Page</a>
         </nav>
-        <button class="Button">Sign in</button>
+        <!-- <button class="Button">Sign in</button> -->
       </header>
+    </div>
 
-      <div class="Headline">
-        <div class="Container">
-          <h1 class="Headline__title ">We Are a Solution Expert Team</h1>
-          <h2 class="Headline__Subtitle">
-            we help our clients discover, build and grow exceptional data-driven
-            websites
-          </h2>
-          <button class="Button Button--headline">Get Started</button>
-        </div>
+    <div class="Headline">
+      <div class="Container">
+        <h1 class="Headline__title ">We Are a Solution Expert Team</h1>
+        <h2 class="Headline__Subtitle">
+          we help our clients discover, build and grow exceptional data-driven
+          websites
+        </h2>
+        <button class="Button Button--big Button--shadowed Button--headline">
+          Get Started
+        </button>
       </div>
     </div>
+
+    <section class="Container">
+      <div class="Services">
+        <div class="Box">
+          <article>
+            <header class="Box__header">
+              <i class="Box__icon"></i>
+              <h2 class="Box__title">Market Analysis</h2>
+            </header>
+            <p class="Box__text">
+              Increase your team’s productivity and save time with a bot that
+              answers and fields customer inquiries
+            </p>
+            <a href="#" class="Box__link">Read details</a>
+          </article>
+        </div>
+        <div class="Box">
+          <article>
+            <header class="Box__header">
+              <i class="Box__icon Box__icon--orange"></i>
+              <h2 class="Box__title">Market Analysis</h2>
+            </header>
+            <p class="Box__text">
+              Increase your team’s productivity and save time with a bot that
+              answers and fields customer inquiries
+            </p>
+            <a href="#" class="Box__link">Read details</a>
+          </article>
+        </div>
+        <div class="Box Box--nomargin">
+          <article>
+            <header class="Box__header">
+              <i class="Box__icon"></i>
+              <h2 class="Box__title">Market Analysis</h2>
+            </header>
+            <p class="Box__text">
+              Increase your team’s productivity and save time with a bot that
+              answers and fields customer inquiries
+            </p>
+            <a href="#" class="Box__link">Read details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="Container">
+      <div class="About">
+        <article>
+          <h2 class="About__title">Why We Are Different Digital agency</h2>
+          <div class="About__content">
+            <p class="About__subtext">
+              The term ‘creative agency’ may sound all-encompassing, but it
+              typically refers to an agency offering more traditional marketing
+              and advertising methods.
+            </p>
+            <!-- TODO: shared styles? -->
+            <p class="About__text">
+              In a world where marketing and advertising is now primarily
+              digital, the term ‘digital agency’ almost seems redundant, doesn’t
+              it? However, with print, radio, television, and other traditional
+              marketing techniques maintaining some relevance among modern
+              strategic marketing campaigns, explaining what makes a ‘digital
+              agency’ different than some others out there is something we think
+              our readers should understand.
+            </p>
+            <!-- Button or Link -->
+            <!-- TODO: space key handler ? -->
+            <a
+              href="#"
+              class="Button Button--big Button--violet Button--shadowed"
+              role="button"
+              >Learn more</a
+            >
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- TODO: use <section> <p> <h4> <span> -->
+    <section class="Container">
+      <div class="CompanyInfo">
+        <div class="CompanyInfo__numbers">
+          <div class="CompanyInfo__years">
+            <h3 class="CompanyInfo__title">Years in the Field</h3>
+            <div class="CompanyInfo__years-number"><span>13</span></div>
+          </div>
+          <div class="CompanyInfo__general">
+            <div class="Box Box--stats">
+              <h3 class="CompanyInfo__subtitle">Happy Customer</h3>
+              <div class="CompanyInfo__number">12<span>k</span></div>
+            </div>
+            <div class="Box Box--stats">
+              <h3 class="CompanyInfo__subtitle">Complete Work</h3>
+              <div class="CompanyInfo__number">15<span>k</span>+</div>
+            </div>
+            <div class="Box Box--stats Box--nomargin">
+              <h3 class="CompanyInfo__subtitle">Total Invest</h3>
+              <div class="CompanyInfo__number">
+                <span>$</span>123<span>k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="CompanyInfo__logos-wrapper">
+          <div class="Box Box--logos Box--nomargin">
+            <div class="CompanyInfo__logos">
+              <div class="CompanyInfo__logo">
+                <img src="./images/client-logo-1.png" alt="" />
+              </div>
+              <div class="CompanyInfo__logo">
+                <img src="./images/client-logo-2.png" alt="" />
+              </div>
+              <div class="CompanyInfo__logo">
+                <img src="./images/client-logo-3.png" alt="" />
+              </div>
+              <div class="CompanyInfo__logo">
+                <img src="./images/client-logo-4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -77,11 +202,11 @@
         b[l].l = +new Date();
         e = o.createElement(i);
         r = o.getElementsByTagName(i)[0];
-        e.src = "https://www.google-analytics.com/analytics.js";
+        e.src = 'https://www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e, r);
-      })(window, document, "script", "ga");
-      ga("create", "UA-XXXXX-X");
-      ga("send", "pageview");
+      })(window, document, 'script', 'ga');
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
     </script>
 
     <!-- build:js scripts/vendor.js -->
