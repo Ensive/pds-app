@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="">
+<!-- TODO: provide languages -->
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ukrainium app</title>
+    <title>
+      Product Development Services | Software, Design, Digital Marketing
+    </title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <!-- Place favicon.ico in the root directory -->
@@ -38,10 +41,11 @@
       </p>
     <![endif]-->
 
+    <!-- TODO: use <main> -->
     <div class="Container Container--Header">
       <header class="Header">
         <a href="#" class="Logo">
-          <img src="./images/logo-at.png" alt="" class="Logo" />
+          <img src="./images/logo/logo-at.png" alt="" class="Logo" />
         </a>
         <span class="Link Link--email">momohelp@mail.com</span>
         <nav class="Nav Nav--header">
@@ -57,11 +61,22 @@
 
     <div class="Headline">
       <div class="Container">
-        <h1 class="Headline__title ">We Are a Solution Expert Team</h1>
-        <h2 class="Headline__Subtitle">
+        <h1 class="Headline__title js-animate-headline-title">
+          We Are a Solution Expert Team
+        </h1>
+        <!--
+          <h1 class="Headline__title">We provide Product Development Services</h1>
+        -->
+        <h2 class="Headline__Subtitle js-animate-headline-subtitle">
           we help our clients discover, build and grow exceptional data-driven
           websites
         </h2>
+        <!--
+          <h2 class="Headline__Subtitle js-animate-headline-subtitle">
+            we help our clients from USA, Germany, Israel, Netherlands discover, build and grow exceptional data-driven
+            websites
+          </h2>
+        -->
         <button class="Button Button--big Button--shadowed Button--headline">
           Get Started
         </button>
@@ -184,16 +199,16 @@
           <div class="Box Box--logos Box--nomargin">
             <div class="CompanyInfo__logos">
               <div class="CompanyInfo__logo">
-                <img src="./images/client-logo-1.png" alt="" />
+                <img src="./images/logo/client-logo-1.png" alt="" />
               </div>
               <div class="CompanyInfo__logo">
-                <img src="./images/client-logo-2.png" alt="" />
+                <img src="./images/logo/client-logo-2.png" alt="" />
               </div>
               <div class="CompanyInfo__logo">
-                <img src="./images/client-logo-3.png" alt="" />
+                <img src="./images/logo/client-logo-3.png" alt="" />
               </div>
               <div class="CompanyInfo__logo">
-                <img src="./images/client-logo-4.png" alt="" />
+                <img src="./images/logo/client-logo-4.png" alt="" />
               </div>
             </div>
           </div>
@@ -272,6 +287,123 @@
       </div>
     </section>
 
+    <section class="Container">
+      <div class="Testimonials__container">
+        <header class="Testimonial__header">
+          <h2 class="Testimonials__title">Testimonial</h2>
+          <h3 class="Testimonials__subtitle">What Our core client say ?</h3>
+        </header>
+        <div class="Testimonials__wrapper">
+          <div class="Testimonials">
+            <article class="Box Box--testimonial Testimonial">
+              <p class="Testimonial__text">
+                Our approach has empowered local, national, and global brands to
+                grow their businesses and achieve a competitive advantage and we
+                can do the same for you.
+              </p>
+              <div class="Testimonial__meta">
+                <div class="Testimonial__portrait"><img src="" alt="" /></div>
+                <h4 class="Testimonial__owner">
+                  <p class="Testimonial__owner-name">Mahfuz Riad</p>
+                  <p class="Testimonial__owner-title">Ui Designer & CEO</p>
+                </h4>
+              </div>
+            </article>
+          </div>
+          <div class="Testimonials__controls">
+            <button
+              class="Testimonials__arrow Testimonials__arrow--left"
+            ></button>
+            <button
+              class="Testimonials__arrow Testimonials__arrow--right"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Container">
+      <header class="Pricing__header">
+        <h2 class="Pricing__title">Pricing Plan</h2>
+        <h3 class="Pricing__subtitle">
+          Two simple options, Free for everyone and the Pro for these who need
+          that extra flavor.
+        </h3>
+      </header>
+      <div class="Pricing">
+        <article class="Box Box--product Product">
+          <header class="Product__header">
+            <h3 class="Product__title">
+              Basic, Free
+              <!-- <span class="Product__price"></span> -->
+            </h3>
+            <h4 class="Product__subtitle">Great for new business</h4>
+            <ul class="Product__package">
+              <li class="Product__package-item">250 Customer profiles</li>
+              <li class="Product__package-item">
+                No setup, monthly, or hidden fees
+              </li>
+              <li class="Product__package-item">Entire course library</li>
+              <li class="Product__package-item">IntegrationsFacebook</li>
+              <li class="Product__package-item">MailsSend emails</li>
+            </ul>
+            <button class="Product__action">Start now</button>
+          </header>
+        </article>
+      </div>
+    </section>
+
+    <section class="Container">
+      <div class="Question">
+        <h2 class="Question__title">
+          Have a burning question, a problem that needs solving or you'd just
+          like to say hello...
+        </h2>
+        <button class="Button">Get In Touch</button>
+      </div>
+    </section>
+
+    <footer class="Footer">
+      <div class="Language">
+        <img src="" alt="" class="Footer__logo" />
+        <form action="#">
+          <label class="Language__label">Language:</label>
+          <select>
+            <!-- TODO: handle 5 languages -->
+            <option value="en"></option>
+            <option value="ru"></option>
+            <option value="ua"></option>
+            <option value="de"></option>
+            <option value="nl"></option>
+          </select>
+        </form>
+      </div>
+
+      <div class="Footer__about">
+        <a href="#" class="Link Link--block Link--footer">How it works</a>
+        <a href="#" class="Link Link--block Link--footer">Design</a>
+        <a href="#" class="Link Link--block Link--footer">Development</a>
+        <a href="#" class="Link Link--block Link--footer">Digital marketing</a>
+        <a href="#" class="Link Link--block Link--footer">Services</a>
+        <a href="#" class="Link Link--block Link--footer">Security</a>
+      </div>
+      <div class="Footer__info"></div>
+
+      <div class="Footer__contact">
+        <div class="Social">
+          <i class="Social__network Social__network--facebook"></i>
+          <i class="Social__network Social__network--twitter"></i>
+          <i class="Social__network Social__network--dribble"></i>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="Footer">
+      <a href="#" class="Link Link--copyright">
+        &copy; 2018 All rights reserved
+      </a>
+    </footer>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b, o, i, l, e, r) {
@@ -296,8 +428,11 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/animation.js"></script>
     <!-- endbuild -->
   </body>
 </html>

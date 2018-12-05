@@ -20,16 +20,27 @@
   padding: 94px 63px 73px;
 }
 
+.Box--testimonial {
+  box-shadow: 0 30px 34px rgba(186, 185, 185, 0.35);
+  padding: 103px 61px 94px 77px;
+  width: 100%;
+}
+
+.Box--product {
+  background-color: #f1f7fe;
+  box-shadow: 0 0 34px rgba(185, 147, 255, 0.35);
+}
+
 .Box--nomargin {
   margin: 0;
 }
 
 .Box__icon {
-  width: 52px;
-  height: 50px;
   background-color: #5460ea;
   border-radius: 10px;
   display: block;
+  height: 50px;
+  width: 52px;
 }
 
 .Box__icon--orange {
@@ -59,14 +70,14 @@
 
   &::after {
     // flex: 1;
-    display: inline-block;
+    // line-height: 38px;
+    background: url('../../images/read-details.png') no-repeat 0 0;
     content: '';
-    background: url('../../images/read-details-arrow.png') no-repeat 0 0;
-    width: 43px;
+    display: inline-block;
     height: 9px;
     margin: 0 0 0 17px;
     transition: transform 0.3s ease;
-    // line-height: 38px;
+    width: 43px;
   }
 
   &:hover {

@@ -35,7 +35,7 @@
 .Purpose__text {
   color: rgba(#39436f, 0.7);
   line-height: 28px;
-  margin: 0 0 0 5px;
+  // margin: 0 0 0 5px;
   max-width: 600px;
 }
 
@@ -89,11 +89,22 @@
 .Purpose__list {
   color: #39436f;
   font-size: 18px;
+  margin: 55px 0 0 0;
+  // padding: 0 0 0 20px;
 }
 
+// TODO: change the icon
 .Purpose__list-item {
+  margin: 0 0 18px;
+
   &::before {
-    font-family: 'fontello';
+    color: #ff846e;
     content: '\e800';
+    font-family: 'fontello';
+    font-size: 30px;
+    height: 20px;
+    width: 26px;
+    margin: 0 21px 0 0;
+    vertical-align: middle;
   }
 }

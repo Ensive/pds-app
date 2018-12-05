@@ -18,9 +18,18 @@
 }
 
 .Link--email {
-  flex: 0 1 auto;
   color: #d7daff;
+  flex: 0 1 auto;
   font-size: 18px;
   font-weight: 500;
   margin: 7px 0 0 0;
+}
+
+.Link--block {
+  display: block;
+}
+
+.Link--footer {
+  color: rgba(#39436f, 0.7);
+  line-height: 40px;
 }
