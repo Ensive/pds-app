@@ -22,11 +22,34 @@
   flex: 0 1 auto;
   font-size: 18px;
   font-weight: 500;
-  margin: 7px 0 0 0;
+  margin: 7px 0 0 16px;
 }
 
-.Link--block {
-  display: block;
+.Link--underline {
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+
+  &::before {
+    background-color: #fff;
+    bottom: 3px;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    transform: translate(-100%, 0);
+    transition: transform 0.4s ease;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover::before {
+    transform: translate(0);
+  }
 }
 
 .Link--footer {

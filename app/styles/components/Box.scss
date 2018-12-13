@@ -35,6 +35,11 @@
   margin: 0;
 }
 
+.Box--service {
+  opacity: 0;
+  transform: rotateY(45deg) scale(1.5);
+}
+
 .Box__icon {
   background-color: #5460ea;
   border-radius: 10px;
@@ -76,7 +81,7 @@
     display: inline-block;
     height: 9px;
     margin: 0 0 0 17px;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
     width: 43px;
   }
 

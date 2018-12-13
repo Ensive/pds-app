@@ -1,0 +1,44 @@
+.Loading {
+  align-items: center;
+  background-color: #5460ea;
+  color: #fff;
+  display: flex;
+  font-size: 70px;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: none;
+
+  &.is-hidden {
+    visibility: hidden;
+  }
+}
+
+.Loading__content {
+  border-radius: 50%;
+  border: 25px solid #fff;
+  height: 250px;
+  line-height: 200px;
+  text-align: center;
+  width: 250px;
+}
+
+.Loading__number {
+  position: relative;
+
+  &::after {
+    bottom: -2.5px;
+    content: '%';
+    display: block;
+    font-size: 35px;
+    line-height: 1;
+    position: absolute;
+    right: -5px;
+    transform: translate(100%, -100%);
+  }
+}

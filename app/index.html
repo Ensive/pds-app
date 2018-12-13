@@ -45,47 +45,55 @@
     <div class="Container Container--Header">
       <header class="Header">
         <a href="#" class="Logo">
-          <img src="./images/logo/logo-at.png" alt="" class="Logo" />
+          <img src="./images/logo/logo-at.png" alt="" />
         </a>
         <span class="Link Link--email">momohelp@mail.com</span>
         <nav class="Nav Nav--header">
-          <a class="Link Link--nav" href="#">Agency</a>
-          <a class="Link Link--nav" href="#">Services</a>
-          <a class="Link Link--nav" href="#">Protfolio</a>
-          <a class="Link Link--nav" href="#">Pricing</a>
-          <a class="Link Link--nav" href="#">Page</a>
+          <a class="Link Link--nav Link--underline" href="#">Agency</a>
+          <a class="Link Link--nav Link--underline" href="#">Services</a>
+          <a class="Link Link--nav Link--underline" href="#">Portfolio</a>
+          <a class="Link Link--nav Link--underline" href="#">Pricing</a>
+          <a class="Link Link--nav Link--underline" href="#">Page</a>
         </nav>
         <!-- <button class="Button">Sign in</button> -->
       </header>
     </div>
 
     <div class="Headline">
-      <div class="Container">
-        <h1 class="Headline__title js-animate-headline-title">
-          We Are a Solution Expert Team
-        </h1>
-        <!--
-          <h1 class="Headline__title">We provide Product Development Services</h1>
-        -->
-        <h2 class="Headline__Subtitle js-animate-headline-subtitle">
-          we help our clients discover, build and grow exceptional data-driven
-          websites
-        </h2>
-        <!--
+      <section class="Container">
+        <div class="Headline__content">
+          <h1 class="Headline__title js-animate-headline-title">
+            We Are a Solution Expert Team
+          </h1>
+          <!--
+            <h1 class="Headline__title">We provide Product Development Services</h1>
+          -->
           <h2 class="Headline__Subtitle js-animate-headline-subtitle">
-            we help our clients from USA, Germany, Israel, Netherlands discover, build and grow exceptional data-driven
+            we help our clients discover, build and grow exceptional data-driven
             websites
           </h2>
-        -->
-        <button class="Button Button--big Button--shadowed Button--headline">
-          Get Started
-        </button>
-      </div>
+          <!--
+            <h2 class="Headline__Subtitle js-animate-headline-subtitle">
+              we help our clients from USA, Germany, Israel, Netherlands discover, build and grow exceptional data-driven
+              websites
+            </h2>
+          -->
+          <!-- TODO: align button -->
+          <button class="Button Button--big Button--shadowed Button--headline">
+            Get Started
+          </button>
+        </div>
+        <img
+          class="Headline__image js-animate-headline-image"
+          src="./images/full-cycle-of-software-product-development-services.png"
+          alt=""
+        />
+      </section>
     </div>
 
     <section class="Container">
       <div class="Services">
-        <div class="Box">
+        <div class="Box Box--service js-animate-service-box">
           <article>
             <header class="Box__header">
               <i class="Box__icon"></i>
@@ -98,7 +106,7 @@
             <a href="#" class="Box__link">Read details</a>
           </article>
         </div>
-        <div class="Box">
+        <div class="Box Box--service js-animate-service-box">
           <article>
             <header class="Box__header">
               <i class="Box__icon Box__icon--orange"></i>
@@ -111,7 +119,7 @@
             <a href="#" class="Box__link">Read details</a>
           </article>
         </div>
-        <div class="Box Box--nomargin">
+        <div class="Box Box--nomargin Box--service js-animate-service-box">
           <article>
             <header class="Box__header">
               <i class="Box__icon"></i>
@@ -380,12 +388,12 @@
       </div>
 
       <div class="Footer__about">
-        <a href="#" class="Link Link--block Link--footer">How it works</a>
-        <a href="#" class="Link Link--block Link--footer">Design</a>
-        <a href="#" class="Link Link--block Link--footer">Development</a>
-        <a href="#" class="Link Link--block Link--footer">Digital marketing</a>
-        <a href="#" class="Link Link--block Link--footer">Services</a>
-        <a href="#" class="Link Link--block Link--footer">Security</a>
+        <a href="#" class="Link Link--footer">How it works</a>
+        <a href="#" class="Link Link--footer">Design</a>
+        <a href="#" class="Link Link--footer">Development</a>
+        <a href="#" class="Link Link--footer">Digital marketing</a>
+        <a href="#" class="Link Link--footer">Services</a>
+        <a href="#" class="Link Link--footer">Security</a>
       </div>
       <div class="Footer__info"></div>
 
@@ -403,6 +411,12 @@
         &copy; 2018 All rights reserved
       </a>
     </footer>
+
+    <div class="Loading">
+      <span class="Loading__content">
+        <span class="Loading__number js-animate-number">100</span>
+      </span>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -425,12 +439,12 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
     <!-- build:js scripts/main.js -->
+    <script src="./scripts/isFullyInViewport.js"></script>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/animation.js"></script>
     <!-- endbuild -->

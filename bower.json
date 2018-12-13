@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",
-    "reset-css": "^4.0.1"
+    "reset-css": "^4.0.1",
+    "gsap": "^2.0.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",

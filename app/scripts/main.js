@@ -1,5 +1,3 @@
-console.log('\'Allo \'Allo!');
-
 (() => {
   const $numbers = $('.js-animate-number');
   $numbers.each(applyCounterAnimation);
