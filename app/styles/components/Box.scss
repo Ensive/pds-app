@@ -8,6 +8,10 @@
   padding: 45px 30px 31px 50px;
 }
 
+.Box--modal {
+  
+}
+
 .Box--stats {
   border-radius: 0;
   box-shadow: 0 22px 30px rgba(202, 202, 203, 0.35);
@@ -37,9 +41,10 @@
 
 .Box--service {
   opacity: 0;
-  transform: rotateY(45deg) scale(1.5);
+  transform: scale(0.7);
 }
 
+// TODO: move out below styles to specifically related section
 .Box__icon {
   background-color: #5460ea;
   border-radius: 10px;

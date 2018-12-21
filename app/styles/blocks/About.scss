@@ -1,6 +1,11 @@
 // TODO: shall we refactor out any components?
 .About {
+  overflow: hidden;
   padding: 119px 0;
+  position: relative;
+}
+
+.About__article {
   max-width: 606px;
 }
 
@@ -30,5 +35,3 @@
   line-height: 28px;
   margin: 0 0 90px;
 }
-
-// .About__button {}

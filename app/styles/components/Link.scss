@@ -14,7 +14,11 @@
 }
 
 .Link--nav {
-  margin: 0 47px 0 0;
+  margin: 0 50px 0 0;
+}
+
+.Link--nomargin {
+  margin: 0;
 }
 
 .Link--email {
@@ -43,11 +47,13 @@
     transition: transform 0.4s ease;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     transform: translate(0);
   }
 }

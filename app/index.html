@@ -33,6 +33,15 @@
     />
   </head>
   <body>
+    <div class="Overlay">
+      <div class="Modal">
+        <button class="Modal__close">x</button>
+        <header class="Modal__header">
+
+        </header>
+        My modal
+      </div>
+    </div>
     <!--[if IE]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -45,17 +54,19 @@
     <div class="Container Container--Header">
       <header class="Header">
         <a href="#" class="Logo">
-          <img src="./images/logo/logo-at.png" alt="" />
+          <img src="./images/logo/logo-at.png" alt="Logo" />
         </a>
         <span class="Link Link--email">momohelp@mail.com</span>
         <nav class="Nav Nav--header">
+          <a class="Link Link--nav Link--underline" href="#services">Services</a>
           <a class="Link Link--nav Link--underline" href="#">Agency</a>
-          <a class="Link Link--nav Link--underline" href="#">Services</a>
           <a class="Link Link--nav Link--underline" href="#">Portfolio</a>
           <a class="Link Link--nav Link--underline" href="#">Pricing</a>
           <a class="Link Link--nav Link--underline" href="#">Page</a>
         </nav>
-        <!-- <button class="Button">Sign in</button> -->
+        <button class="Button Button--quote Button--shadowed">
+          Request a quote
+        </button>
       </header>
     </div>
 
@@ -84,15 +95,15 @@
           </button>
         </div>
         <img
-          class="Headline__image js-animate-headline-image"
+          class="Image Image--animated Image--headline js-animate-headline-image"
           src="./images/full-cycle-of-software-product-development-services.png"
-          alt=""
+          alt="Full cycle of software development services"
         />
       </section>
     </div>
 
     <section class="Container">
-      <div class="Services">
+      <div id="services" class="Services">
         <div class="Box Box--service js-animate-service-box">
           <article>
             <header class="Box__header">
@@ -135,9 +146,9 @@
       </div>
     </section>
 
-    <div class="Container">
-      <div class="About">
-        <article>
+    <div class="About">
+      <div class="Container">
+        <article class="About__article">
           <h2 class="About__title">Why We Are Different Digital agency</h2>
           <div class="About__content">
             <p class="About__subtext">
@@ -165,15 +176,20 @@
             >
           </div>
         </article>
+        <img
+          class="Image Image--animated Image--agency js-animate-agency-image"
+          src="./images/we-are-different-digital-product-development-agency.png"
+          alt="We are different digital product development agency"
+        />
       </div>
     </div>
 
     <!-- TODO: use <section> <p> <article> -->
     <section class="Container">
       <div class="CompanyInfo">
+        <h3 class="CompanyInfo__title">Years in the Field</h3>
         <div class="CompanyInfo__numbers">
           <div class="CompanyInfo__years">
-            <h3 class="CompanyInfo__title">Years in the Field</h3>
             <div class="CompanyInfo__years-number">
               <span class="js-animate-number">13</span>
             </div>
@@ -445,8 +461,8 @@
 
     <!-- build:js scripts/main.js -->
     <script src="./scripts/isFullyInViewport.js"></script>
-    <script src="./scripts/main.js"></script>
     <script src="./scripts/animation.js"></script>
+    <script src="./scripts/scrollToAnchor.js"></script>
     <!-- endbuild -->
   </body>
 </html>

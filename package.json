@@ -1,4 +1,12 @@
 {
+  "scripts": {
+    "start": "gulp && gulp serve",
+    "test": "gulp && gulp serve:test",
+    "build": "gulp",
+    "start:production": "gulp serve:dist",
+    "lint": "gulp lint",
+    "clean": "gulp clean"
+  },
   "private": true,
   "engines": {
     "node": ">=4"

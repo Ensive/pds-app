@@ -4,9 +4,6 @@
   position: relative;
 }
 
-.Headline__content {
-}
-
 .Headline__title {
   color: #fff;
   font-size: 70px;
@@ -27,22 +24,4 @@
   max-width: 723px;
   opacity: 0;
   transform: translate(0, 80px);
-}
-
-.Headline__image {
-  // display: none;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 90px;
-  transform: translate(0, 15px);
-
-  // @include media($tablet-landscape-up) {
-  // }
-
-  // @include media($laptop-up) {
-  // }
-
-  // @include media($desktop-up) {
-  // }
 }
